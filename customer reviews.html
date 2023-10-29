@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Reviews - GRAVITY TOUR AND TRAVELS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body bgcolor="alice blue">
+    <header>
+        <h1>GRAVITY TOUR AND TRAVELS- Customer Reviews</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="shaurya.html">Home</a></li>
+            <li><a href="form.html">form</a></li>
+            <li><a href="about us .html">About Us</a></li>
+            <li><a href="contact us .html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="review-form">
+        <h2>Write a Review</h2>
+        <form action="submit_review.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <!-- Insert customer reviews here -->
+        <div class="review">
+            <h3>shaurya</h3>
+            <div class="rating">5 Stars</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec elit eu elit varius.
+                Curabitur non metus nec libero volutpat facilisis at in leo. Sed euismod varius ante ac ultricies.
+                Nullam a erat eu purus congue iaculis in vel justo.
+            </p>
+        </div>
+        <div class="review">
+            <h3>mradanshu</h3>
+            <div class="rating">4 Stars</div>
+            <p>
+                Ut sit amet nisl non tortor vestibulum sagittis. Vivamus scelerisque lorem in lacus laoreet,
+                in scelerisque nulla ultricies. Integer nec justo non purus tempus hendrerit in id libero.
+            </p>
+        </div>
+        <!-- Add more customer reviews as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GRAVITY TOUR AND TRAVELS| All Rights Reserved</p>
+    </footer>
+</body>
+</html>
